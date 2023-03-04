@@ -16,14 +16,112 @@ class XylophoneApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Center(
-            child: TextButton(
-              onPressed: () {
-                final player = AudioCache();
-                player.play('assets/note4.wav');
-              },
-              child: Text("Click Me"),
-            ),
+          child: Column(
+            children: <Widget>[
+              Container(
+                child: Expanded(
+                  child: Center(
+                    child: TextButton(
+                      onPressed: () {
+                        final player = AudioCache();
+                        player.play('note1.wav');
+                      },
+                      child: Text("Click Me"),
+                      style: TextButton.styleFrom(backgroundColor: Colors.red),
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                child: Expanded(
+                  child: Center(
+                    child: TextButton(
+                      onPressed: () {
+                        final player = AudioCache();
+                        player.play('note2.wav');
+                      },
+                      child: Text("Click Me"),
+                      style:
+                          TextButton.styleFrom(backgroundColor: Colors.orange),
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                child: Expanded(
+                  child: Center(
+                    child: TextButton(
+                      onPressed: () {
+                        final player = AudioCache();
+                        player.play('note3.wav');
+                      },
+                      child: Text("Click Me"),
+                      style:
+                          TextButton.styleFrom(backgroundColor: Colors.yellow),
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                child: Expanded(
+                  child: Center(
+                    child: TextButton(
+                      onPressed: () {
+                        final player = AudioCache();
+                        player.play('note4.wav');
+                      },
+                      child: Text("Click Me"),
+                      style: TextButton.styleFrom(
+                        backgroundColor: Colors.green,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                child: Expanded(
+                  child: Center(
+                    child: TextButton(
+                      onPressed: () {
+                        final player = AudioCache();
+                        player.play('note5.wav');
+                      },
+                      child: Text("Click Me"),
+                      style: TextButton.styleFrom(backgroundColor: Colors.teal),
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                child: Expanded(
+                  child: Center(
+                    child: TextButton(
+                      onPressed: () {
+                        final player = AudioCache();
+                        player.play('note6.wav');
+                      },
+                      child: Text("Click Me"),
+                      style: TextButton.styleFrom(backgroundColor: Colors.blue),
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                child: Expanded(
+                  child: Center(
+                    child: TextButton(
+                      onPressed: () {
+                        final player = AudioCache();
+                        player.play('note7.wav');
+                      },
+                      child: Text("Click Me"),
+                      style:
+                          TextButton.styleFrom(backgroundColor: Colors.purple),
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),
